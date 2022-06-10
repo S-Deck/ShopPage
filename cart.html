@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Boot-kom</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/typing.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Boot-kom</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container">
+                <div class="conttype">
+                    <p>Your Cart</p>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <!-- search bar -->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-7 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="my-5">
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="name" type="text" placeholder="" value=""/>
+                                    <label for="name">Name</label>
+                                    <span id="name_error" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="lname" type="text" placeholder="" value=""/>
+                                    <label for="lname">Last Name</label>
+                                    <span id="lname_error" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="email" type="email" placeholder=""/>
+                                    <label for="email">Email</label>
+                                    <span id="email_error" class="text-danger"></span>
+                                </div>
+                                
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="phone" type="tel" placeholder="" />
+                                    <label for="phone">Phone number</label>
+                                    <span id="phone_error" class="text-danger"></span>
+                                </div>
+                                <div class="row mb-2">
+                                    <div class="form-floating col-xl-3">
+                                        <input class="form-control" id="zipcode" type="text" placeholder="" value=""/>
+                                        <label class="ms-2" for="zipcode">ZipCode</label>
+                                        <span id="zipcode_error" class="text-danger"></span>
+                                    </div>
+                                    <div class="form-floating col-xl-9">
+                                        <input class="form-control" id="address" type="text" placeholder="" value=""/>
+                                        <label class="ms-2" for="address">Address</label>
+                                        <span id="address_error" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="city" type="text" placeholder="" value=""/>
+                                    <label for="city">City</label>
+                                    <span id="city_error" class="text-danger"></span>
+                                </div>
+                                <div class="form-floating">
+                                    <p><label for="payment" class="form-radio">Payment:</label></p>
+                                    <p><input class="form-check-input" name="payment" id="payment" type="radio" value="Credit Card" /> Credit Card</p>
+                                    <p><input class="form-check-input" name="payment" id="payment1" type="radio" value= "Blik" /> Blik</p>
+                                    <p><input class="form-check-input" name="payment" id="payment2" type="radio" value= "Transfer" /> Traditional Transfer</p>
+                                    <p><span id="payment_error" class="text-danger"></span><br /></p>
+                                </div>
+                                <div class="form-floating">
+                                    <p><label for="delivery" class="form-radio">Delivery:</label></p>
+                                    <p><input class="form-check-input" name="delivery" id="delivery" type="radio" value="Delivery man" /> Delivery man</p>
+                                    <p><input class="form-check-input" name="delivery" id="delivery1" type="radio" value= "Parcel locker" /> Parcel locker</p>
+                                    <p><input class="form-check-input" name="delivery" id="delivery2" type="radio" value= "Pickup in person" /> Pickup in person</p>
+                                    <p><span id="delivery_error" class="text-danger"></span><br /></p>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="comment" placeholder="" style="height: 12rem" data-sb-validations="required"></textarea>
+                                    <label for="comment">Comment</label>
+                                </div>
+                                <button id="check" class="btn btn-outline-dark mt-2"><i class="bi-check2"></i></button>
+                           <div id="cart"></div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-10 col-lg-8 col-xl-5">
+                        <div class="my-5">
+                            <div class="form-floating" id="cartmenu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Boot-kom 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/cart.js"></script>
+        <script src="/js/sortsearch.js"></script>
+    </body>
+</html>
