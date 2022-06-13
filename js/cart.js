@@ -1,22 +1,27 @@
 var cart = JSON.parse(localStorage.getItem("cart"));
 
 function show(){
-    let menu="";
     menu = "<table id=tab class=w-100><thead><tr><td></td><td>Name</td><td>Price</td></thead><tbody>";
     let sumprice=0;
     for(let i=0;i<cart.length;i++) { 
+        let itemprice=parseInt(cart[i].price.slice(1))*parseInt(cart[i].quantity);
         menu+=`<tr id="+i+"><td><img style="border-radius:5px; width: 50px; height:50px"src="`+cart[i].img+`" style="" alt=... /></td>`+
-        "<td id=c_"+i+">"+cart[i].name+"</td><td id=c_"+i+">"+cart[i].price;
-        menu+=`<td><button class="btn btn-outline-danger" onclick=clearelem("+i+")>X</button></td></tr>`;
-        sumprice+=parseInt(cart[i].price.slice(1));
+        "<td id=c_"+i+">"+cart[i].name+"</br>Quantity: "+cart[i].quantity+"</td><td id=c_"+i+">$"+itemprice+
+        `<td><button class="btn btn-outline-danger" onclick=clearelem("`+i+`")>X</button></td></tr>`;
+        sumprice+=itemprice;
     }
     menu += "</tbody></table></br>";
-    menu += `<div class="d-flex flex-row-reverse ms-7"><button class="btn btn-outline-dark">To pay: $`+sumprice+`.00 </button></div>`;
+    menu += `<div class="d-flex flex-row-reverse ms-7"><button class="btn btn-outline-dark">Total: $`+sumprice+`.00 </button></div>`;
     document.getElementById("cartmenu").innerHTML=menu;
 }
 
 function clearelem(i){
-    cart.splice(i,1);
+    if(cart[i].quantity>1){
+        cart[i].quantity--;
+    }
+    else{
+        cart.splice(i,1);
+    }
     localStorage.setItem("cart", JSON.stringify(cart));
     if(cart.length==0){
         window.location.href='index.html';

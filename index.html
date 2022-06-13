@@ -16,7 +16,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
-        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!">Boot-kom</a>
@@ -37,7 +36,6 @@
                 </div>
             </div>
         </nav>
-        <!-- Header-->
         <header class="bg-dark py-5">
             <div class="container">
                 <div class="conttype">
@@ -45,8 +43,6 @@
                   </div>
             </div>
         </header>
-        <!-- Section-->
-        <!-- search bar -->
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row mb-2">
                 <div class="input-group col-12">
@@ -75,230 +71,6 @@
             <span id="clickview"></span>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="page">
-                    <div class="col mb-5" name="Product" id="Keyboard">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/assets/klaw1.jpg" id="image1" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"> <label name="pname" id="name1"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <label id="price1"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(1)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="Mouse">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/assets/mouse1.jpg" id="image2" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name2"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$150.00</span>
-                                    <label id="price2"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(2)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="HeadSet">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/assets/headset1.jpg" id="image3" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name3"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$150.00</span>
-                                    <label id="price3"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(3)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="Monitor">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/assets/monit2.jpg" id="image4" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name4"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <label id="price4"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(4)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="Keyboard">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/assets/klaw2.jpg" id="image5" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name5"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$120.00</span>
-                                    <label id="price5"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(5)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="Mouse">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="/assets/mouse2.jpg" id="image6" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name6"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <label id="price6"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(6)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="HeadSet">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/headset2.jpg" id="image7" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name7"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$140.00</span>
-                                    <label id="price7"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(7)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5" name="Product" id="Monitor">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="assets/monit1.jpg" id="image8" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder"><label name="pname" id="name8"></label></h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <label id="price8"></label>
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><button onclick="add(8)" class="btn btn-outline-dark mt-auto" href="#">Add to cart</button></div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>

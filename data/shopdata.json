@@ -1,10 +1,10 @@
 [
-    {"id":1, "title": "Razer Huntsman V2 Tenkeyless Red Linear", "price": 150},
-    {"id":2, "title": "Logitech G502 LIGHTSPEED HERO", "price": 120},
-    {"id":3, "title": "SteelSeries Arctis 3 Black", "price": 90},
-    {"id":4, "title": "Samsung Odyssey G3", "price": 250},
-    {"id":5, "title": "Logitech G PRO Clicky", "price": 100},
-    {"id":6, "title": "SteelSeries Aerox 5 Wireless", "price": 105},
-    {"id":7, "title": "Logitech G PRO X GAMING", "price": 120},
-    {"id":8, "title": "Acer Nitro VG240YBMIIX", "price": 200}
+    {"id":1, "title": "Razer Huntsman V2 Tenkeyless Red Linear", "price": 150, "stars": 5, "img": "klaw1.jpg", "category": "Keyboard"},
+    {"id":2, "title": "Logitech G502 LIGHTSPEED HERO", "price": 120, "stars": 5, "img": "mouse1.jpg", "category": "Mouse"},
+    {"id":3, "title": "SteelSeries Arctis 3 Black", "price": 90, "stars": 4, "img": "headset1.jpg", "category": "HeadSet"},
+    {"id":4, "title": "Samsung Odyssey G3", "price": 250, "stars": 4, "img": "monit2.jpg", "category": "Monitor"},
+    {"id":5, "title": "Logitech G PRO Clicky", "price": 100, "stars": 3, "img": "klaw2.jpg", "category": "Keyboard"},
+    {"id":6, "title": "SteelSeries Aerox 5 Wireless", "price": 105, "stars": 4, "img": "mouse2.jpg", "category": "Mouse"},
+    {"id":7, "title": "Logitech G PRO X GAMING", "price": 120, "stars": 5, "img": "headset2.jpg", "category": "HeadSet"},
+    {"id":8, "title": "Acer Nitro VG240YBMIIX", "price": 200, "stars": 5, "img": "monit1.jpg", "category": "Monitor"}
 ]
